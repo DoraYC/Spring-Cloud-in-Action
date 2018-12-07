@@ -1,0 +1,11 @@
+stores:
+  ribbon:
+    listOfServers: example.com,google.com
+ribbon:
+  eureka:
+    enabled: false
+spring:
+  application:
+    name: ribbon-client
+server:
+  port: 8775

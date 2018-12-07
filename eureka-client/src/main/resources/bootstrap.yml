@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server3:8763/eureka/
+---
+server:
+  port: 8771
+
+spring:
+  profiles: client1
+  application:
+    name: eureka-client
+---
+server:
+  port: 8772
+
+spring:
+  profiles: client2
+  application:
+    name: eureka-client
