@@ -1,1 +1,28 @@
 foo: foo version 2
+---
+server:
+  port: 8782
+spring:
+  profiles: client1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  management:
+    security:
+      enabled: false
+---
+server:
+  port: 8783
+spring:
+  profiles: client2
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  management:
+    security:
+      enabled: false
+
